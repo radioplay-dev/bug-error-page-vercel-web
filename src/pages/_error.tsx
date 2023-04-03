@@ -1,4 +1,4 @@
-import { NextPage, NextPageContext } from "next";
+import { NextPage } from "next";
 import React from "react";
 import {loadI18nDictionary} from "@/helpers/loadI18nDictionary";
 
