@@ -5,7 +5,6 @@ interface IProps {
 }
 
 const MyPage = (props:IProps) => {
-  // eslint-disable-next-line no-console
   console.log("MyPage render:", props);
   return <main><h1>My page</h1><p>Page</p></main>;
 };

@@ -7,15 +7,7 @@ const CustomError: NextPage = (props) => {
   return <main><h1>Custom _error page</h1><p>Error</p></main>
 };
 
-CustomError.getInitialProps = async (
-  contextData: NextPageContext
-) => {
-  const { res } = contextData;
-
-  if (res) {
-    res.statusCode = 500;
-  }
-
+CustomError.getInitialProps = async () => {
   const i18n = await loadI18nDictionary();
 
   return {
